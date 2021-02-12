@@ -1,5 +1,20 @@
+body {
+  background-color: black;
+}
+
 p {
   font-size: 25px;
   font-family: Courier;
+  color: lightgreen;
+}
+
+.demo {
+  color: gray;
+}
+
+.java_header {
+  color: orange;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 /*# sourceMappingURL=styles.css.map */

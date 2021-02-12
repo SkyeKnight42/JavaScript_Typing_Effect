@@ -11,18 +11,36 @@
         </header>
         <!-- add the class 'typing' to each text based element you want to be typed out on page load. -->
         <!-- <h2 class="typing">This effect works with headers</h2> -->
-            <p >Here is some text that will be typed out to the page on load.</p>
-            <p class="slow-typing">Duis id consequat nostrud do et officia fugiat est et nostrud commodo nulla ea. Non labore dolor quis officia reprehenderit eiusmod reprehenderit adipisicing in mollit duis deserunt dolore esse. Ad mollit elit nostrud qui aliqua.</p>
-            <p class="slow-typing">Tempor sit non sit est anim ullamco in minim nulla incididunt tempor excepteur sit elit.</p>
-            <p class="slow-typing">Fugiat culpa deserunt aliqua cillum proident velit sunt voluptate consequat.</p>
-            <!-- <p class="normal-typing">Duis id consequat nostrud do et officia fugiat est et nostrud commodo nulla ea. Non labore dolor quis officia reprehenderit eiusmod reprehenderit adipisicing in mollit duis deserunt dolore esse. Ad mollit elit nostrud qui aliqua.</p>
-            <p class="fast-typing">Duis id consequat nostrud do et officia fugiat est et nostrud commodo nulla ea. Non labore dolor quis officia reprehenderit eiusmod reprehenderit adipisicing in mollit duis deserunt dolore esse. Ad mollit elit nostrud qui aliqua.</p>
-            <p class="slow-dash">Duis id consequat nostrud do et officia fugiat est et nostrud commodo nulla ea. Non labore dolor quis officia reprehenderit eiusmod reprehenderit adipisicing in mollit duis deserunt dolore esse. Ad mollit elit nostrud qui aliqua.</p>
-            <p class="normal-dash">Duis id consequat nostrud do et officia fugiat est et nostrud commodo nulla ea. Non labore dolor quis officia reprehenderit eiusmod reprehenderit adipisicing in mollit duis deserunt dolore esse. Ad mollit elit nostrud qui aliqua.</p>
-            <p class="fast-dash">Duis id consequat nostrud do et officia fugiat est et nostrud commodo nulla ea. Non labore dolor quis officia reprehenderit eiusmod reprehenderit adipisicing in mollit duis deserunt dolore esse. Ad mollit elit nostrud qui aliqua.</p>
-            <p class="slow-blink">Duis id consequat nostrud do et officia fugiat est et nostrud commodo nulla ea. Non labore dolor quis officia reprehenderit eiusmod reprehenderit adipisicing in mollit duis deserunt dolore esse. Ad mollit elit nostrud qui aliqua.</p>
-            <p class="normal-blink">Duis id consequat nostrud do et officia fugiat est et nostrud commodo nulla ea. Non labore dolor quis officia reprehenderit eiusmod reprehenderit adipisicing in mollit duis deserunt dolore esse. Ad mollit elit nostrud qui aliqua.</p>
-            <p class="fast-blink">Duis id consequat nostrud do et officia fugiat est et nostrud commodo nulla ea. Non labore dolor quis officia reprehenderit eiusmod reprehenderit adipisicing in mollit duis deserunt dolore esse. Ad mollit elit nostrud qui aliqua.</p> -->
+            <p>Here is some text that will be typed out to the page on load.</p>
+            <p class="demo">&lt;p id=&quot;typing&quot;&gt;Duis id consequat nostrud do et officia fugiat est et nostrud commodo nulla ea.&lt;/p&gt;</p>
+            <p class="testingclassname hello goodbye" id="typing">Duis id consequat nostrud do et officia fugiat est et nostrud commodo nulla ea.</p>
+            <!-- <p class="demo">&lt;p id=&quot;dash&quot;&gt;Tempor sit non sit est anim ullamco in minim nulla incididunt tempor excepteur sit elit.&lt;/p&gt;</p>
+            <p id="dash">Tempor sit non sit est anim ullamco in minim nulla incididunt tempor excepteur sit elit.</p>
+            <p class="demo">&lt;p id=&quot;blinking&quot;&gt;Fugiat culpa deserunt aliqua cillum proident velit sunt voluptate consequat.&lt;/p&gt;</p>
+            <p id="blink">Fugiat culpa deserunt aliqua cillum proident velit sunt voluptate consequat.</p>
+            <br> -->
+
+            <p class="demo">&lt;p&gt; onclick&equals;"TypeOutText&lpar;this, 150, 'typing', null&rpar;"CLICK ME&excl; This is some test text&lt;/p&gt;</p>
+            <p onclick="TypeOutText(this, 50, 'typing', null)">CLICK ME! This is some test text</p>
+            <p class="demo">&lt;p&gt; onclick&equals;"TypeOutText&lpar;this, 150, 'dash', '!'&rpar;"CLICK ME&excl; This is some test text&lt;/p&gt;</p>
+            <p onclick="TypeOutText(this, 50, 'dash', '!')">CLICK ME! 2 This is some test text</p>
+            <p class="demo">&lt;p&gt; onclick&equals;"TypeOutText&lpar;this, 150, 'blink', '#'&rpar;"CLICK ME&excl; This is some test text&lt;/p&gt;</p>
+            <p onclick="TypeOutText(this, 50, 'blink', '#')">CLICK ME! 3 This is some test text</p>
+
+            <br>
+            <p class="java_header">And in the javascript</p>
+            <p>let typing &equals; document.getElementById&lpar;&quot;typing&quot;&rpar;</p>
+            <p>let dash &equals; document.getElementById&lpar;&quot;dash&quot;&rpar;</p>
+            <p>let blink &equals; document.getElementById&lpar;&quot;blink&quot;&rpar;</p>
+
+            <br>
+            <p>document.addEventListener&lpar;&quot;DOMContentLoaded&quot;&comma; function&lpar;&rpar; {</p>
+
+            <p>TypeOutText&lpar;typing&comma; 50&comma; &quot;typing&quot;&comma; null&rpar;</p>
+            <p>TypeOutText&lpar;dash&comma; 100&comma; &quot;dash&quot;&comma; &quot;|&quot;&rpar;</p>
+            <p>TypeOutText&lpar;blink&comma; 150&comma; &quot;blink&quot;&comma; &quot;|&quot;&rpar;</p>
+            <p>}&rpar;</p>
+
         <footer>
 
         </footer>
