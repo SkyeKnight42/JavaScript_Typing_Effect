@@ -5,16 +5,7 @@ let blink = document.getElementById("blink")
 
 let typingElements = []
 let classNamesInUse = []
-// Begin the code when the page is loaded.
-document.addEventListener("DOMContentLoaded", function() {
 
-    // TypeOutText(typing, 50, "typing", null)
-    // TypeOutText(dash, 100, "dash", "|")
-    // TypeOutText(blink, 150, "blink", "|")
-    // console.log(typing.classList)
-})
-
-// the HTML element, the speed (milliseconds), normal typing ("typing"), dash ("dash"), or blinking ("blink"), and the character for the blink/dash effect as a string.
 function TypeOutText(element, speed, style, endcharacter) {
     if (FindInArray(element, typingElements) == null) {
 
@@ -95,12 +86,8 @@ function TypeOutText(element, speed, style, endcharacter) {
         
                     break;
             }
-        } else {
-
-        }
-    } else {
-
-    }
+        } 
+    } 
 }
 
 function FindInArray(value, array) {
